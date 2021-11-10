@@ -20,16 +20,19 @@
       <span>Светлана Арабей представляет</span>
       <img src="img/logo.png" alt="logo">
     </a>
-    <ul class="header-menu">
-      <li><a href="#">Аниматоры</a></li>
-      <li><a href="#">Шоу</a></li>
-      <li><a href="#">Квесты</a></li>
-      <li><a href="#">Спектакли</a></li>
-      <li><a href="#">Мастер классы</a></li>
-      <li><a href="#">Новый год</a></li>
-      <li><a href="#">Декорации</a></li>
-      <li><a href="#">Доп. услуги</a></li>
-      <li><a href="#">Контакты</a></li>
+    <div class="header__burger js-modal-header">
+      <img src="img/bur.svg" alt="">
+    </div>
+    <ul class="header-menu" data-da=".adaptive-menu,1279,3">
+      <li><a href="#anim">Аниматоры</a></li>
+      <li><a href="#show">Шоу</a></li>
+      <li><a href="#quest">Квесты</a></li>
+      <li><a href="#spec">Спектакли</a></li>
+      <li><a href="#master">Мастер классы</a></li>
+      <li><a href="#ny">Новый год</a></li>
+      <li><a href="#dec">Декорации</a></li>
+      <li><a href="#more">Доп. услуги</a></li>
+      <li><a href="#footer">Контакты</a></li>
     </ul>
     <div class="header-info">
       <a href="tel:+79999999999" class="header-info__tel">+7 (999) 999-99-99</a>
@@ -71,7 +74,7 @@
         </div>
 
         <div class="banner-video">
-          <a href="#" class="banner-video__link">
+          <a href="#" class="banner-video__link js-video-1">
             <img src="img/tv.svg" alt="">
             <span>Видео о нас</span>
           </a>
@@ -79,14 +82,7 @@
 
         <div class="banner-img">
           <div class="banner-img__bot">
-            <svg width="1920" height="208" viewBox="0 0 1920 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1210.75 0.0718831C1312.64 -2.0476 1413.5 42.7699 1472.82 125.642C1529.02 204.173 1519.06 305.947 1496.95 399.953C1475.08 492.929 1436.83 584.459 1353.79 631.643C1263.95 682.685 1153.99 690.542 1059.64 648.42C961.981 604.821 885.203 518.563 865.178 413.506C845.894 312.34 895.965 215.286 962.014 136.268C1025.8 59.9614 1111.32 2.14025 1210.75 0.0718831Z" fill="white" fill-opacity="0.54" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1682.11 2.7575C1742.51 8.34604 1782.08 60.4568 1818.74 108.751C1853.82 154.96 1892.48 206.125 1879.39 262.634C1866.34 319.013 1810.51 350.82 1757.37 373.798C1707.54 395.34 1653.36 401.971 1602.8 382.221C1546.53 360.242 1495.01 322.069 1477.21 264.372C1457.87 201.688 1469.14 131.802 1509.59 80.1464C1550.47 27.9573 1616.08 -3.35251 1682.11 2.7575Z" fill="white" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1741.82 36.2585C1847.48 33.4573 1958.7 52.6237 2027.23 133.094C2098.01 216.2 2117.92 334.976 2084.8 438.99C2054.43 534.352 1961.96 587.402 1869.99 626.864C1784.38 663.595 1690.46 681.888 1604.97 644.863C1515.26 606.007 1448.1 527.974 1423.32 433.399C1397.53 334.929 1411.08 227.15 1474.77 147.741C1538.26 68.5683 1640.36 38.948 1741.82 36.2585Z" fill="white" fill-opacity="0.27" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M854.875 124.642C887.922 95.5867 928.604 72.0777 971.976 79.5588C1016.77 87.2849 1054.8 119.978 1071.94 162.083C1087.65 200.686 1072.21 242.302 1053.32 279.438C1035.73 314.004 1010.57 344.889 973.355 355.825C934.304 367.302 892.019 360.237 858.884 336.581C824.384 311.95 799.985 273.857 799.183 231.479C798.384 189.228 823.145 152.54 854.875 124.642Z" fill="white" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M726.755 33.0043C824.369 33.6502 900.84 106.478 961.009 183.346C1020.31 259.104 1066.05 348.984 1048.07 443.496C1029.36 541.832 959.292 622.318 869.185 665.917C778.865 709.619 675.091 708.522 583.091 668.478C486.079 626.252 394.546 554.447 374.439 450.571C354.881 349.531 422.214 258.878 488.58 180.22C551.903 105.17 628.562 32.3546 726.755 33.0043Z" fill="white" fill-opacity="0.42" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M390.957 66.2949C482.878 113.975 564.833 194.743 574.142 297.876C583.297 399.293 507.535 481.325 434.859 552.652C363.13 623.05 280.261 695.182 180.342 684.368C79.9082 673.499 8.1051 588.858 -41.8563 501.058C-88.7993 418.562 -110.716 321.27 -76.6972 232.66C-43.6951 146.698 38.7387 96.0185 125.492 65.1566C213.206 33.953 308.314 23.4274 390.957 66.2949Z" fill="white" />
-            </svg>
+            <img src="img/imgbot.svg" alt="">
 
           </div>
           <div class="banner-img__sun">
@@ -118,7 +114,7 @@
 
     </section>
 
-    <section class="program">
+    <section id="anim" class="program">
       <div class="container program__container">
         <div class="program__content">
           <h2 class="title title-white programm__title">
@@ -585,7 +581,7 @@
       </div>
     </section>
 
-    <section class="show">
+    <section id="show" class="show">
       <div class="container show__container">
         <h2 class="title title-blue show__title">
           СУПЕРОШОУ программы
@@ -1148,68 +1144,140 @@
 
     <section class="choice">
       <div class="container choice__container">
-        <h2 class="title title-purple choice__title">
-          Выберите свой праздник уже сейчас:
-        </h2>
-        <h3 class="choice__subtitle">
-          Для кого праздник?
-        </h3>
-        <div class="choice-items">
-          <a href="#" class="choice-item js-ch-b">
-            <img src="img/boy.png" alt="">
-            <span>Мальчик</span>
-          </a>
-          <a href="#" class="choice-item js-ch-b">
-            <img src="img/girl.png" alt="">
-            <span>Девочка</span>
-          </a>
-        </div>
-        <div class="choice-age">
-          <h3 class="choice-age__title">
-            Какой возраст у именинника?
+        <div class="choice__content">
+
+          <h2 class="title title-purple choice__title">
+            Выберите свой праздник уже сейчас:
+          </h2>
+          <h3 class="choice__subtitle">
+            Для кого праздник?
           </h3>
-          <div class="choice-age__items">
-            <a href="#">
-              <img src="" alt="">
+          <div class="choice-items">
+            <a href="#" class="choice-item js-ch-g">
+              <img src="img/boy.png" alt="">
+              <span>Мальчик</span>
+            </a>
+            <a href="#" class="choice-item js-ch-g">
+              <img src="img/girl.png" alt="">
+              <span>Девочка</span>
             </a>
           </div>
+          <div class="choice-age">
+            <h3 class="choice__subtitle">
+              Какой возраст у именинника?
+            </h3>
+            <div class="choice-age__items">
+              <a href="#" class="choice-age__item js-ch-a">
+                <img src="img/ch1.png" alt="">
+                <span>до 3 лет</span>
+              </a>
+              <a href="#" class="choice-age__item js-ch-a">
+                <img src="img/ch2.png" alt="">
+                <span>до 3 лет</span>
+              </a>
+              <a href="#" class="choice-age__item js-ch-a">
+                <img src="img/ch3.png" alt="">
+                <span>до 3 лет</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="choice-count">
+            <h3 class="choice__subtitle">
+              Сколько детей будет на празднике?
+            </h3>
+            <div class="choice-count__items">
+              <a href="#" class="choice-count__item js-ch-c">Только 1 ребенок</a>
+              <a href="#" class="choice-count__item js-ch-c">От 2 до 10</a>
+              <a href="#" class="choice-count__item js-ch-c">Больше 10 детей</a>
+            </div>
+          </div>
+
+          <div class="choice-price">
+            <h3 class="choice__subtitle">
+              Сколько детей будет на празднике?
+            </h3>
+            <div class="choice-count__items">
+              <a href="#" class="choice-count__item js-ch-p">От 2900 до 6000</a>
+              <a href="#" class="choice-count__item js-ch-p">От 6000 до 1200</a>
+              <a href="#" class="choice-count__item js-ch-p">От 12 до 30000</a>
+              <a href="#" class="choice-count__item js-ch-p">Более 30000</a>
+              <a href="#" class="choice-count__item js-ch-p">Цена не важна</a>
+            </div>
+          </div>
+
+          <div class="choice-img">
+            <div class="choice-img__bot">
+              <img src="img/chbg.svg" alt="">
+            </div>
+            <div class="choice-img__left">
+              <img src="img/chl1.png" alt="">
+              <img src="img/chl2.png" alt="">
+            </div>
+            <div class="choice-img__right">
+              <img src="img/chr1.png" alt="">
+              <img src="img/chr2.png" alt="">
+            </div>
+            <div class="choice-img__star-1">
+              <img src="img/s1.svg" alt="">
+            </div>
+            <div class="choice-img__star-2">
+              <img src="img/sy.svg" alt="">
+            </div>
+            <div class="choice-img__star-3">
+              <img src="img/sy.svg" alt="">
+            </div>
+            <div class="choice-img__star-4">
+              <img src="img/sy.svg" alt="">
+            </div>
+            <div class="choice-img__star-5">
+              <img src="img/sy.svg" alt="">
+            </div>
+            <div class="choice-img__star-6">
+              <img src="img/s1.svg" alt="">
+            </div>
+
+
+          </div>
         </div>
+        <div class="choice-form">
+          <div class="choice-form__left">
+            <img src="img/chfi.png" alt="">
+          </div>
+          <div class="choice-form__right">
+            <h2 class="title title-purple choice-form__title">
+              Теперь мы знаем, как Вам помочь!
+            </h2>
+            <h3 class="choice-form__subtitle">
+              Заполните форму и мы с Вами свяжемся
+            </h3>
+            <div class="banner-form">
+              <form action="post">
+                <p class="banner-form__text">
+                  Ваш ребенок получит незабываемые эмоции
+                </p>
+                <span class="input__icon input__icon-name">
+                  <input type="text" class="form-control input banner-form__input" placeholder="Имя">
+                </span>
+                <span class="input__icon input__icon-tel">
+                  <input type="tel" class="form-control input banner-form__input" placeholder="Ваш телефон">
+                </span>
 
-        <div class="choice-img">
-          <div class="choice-img__bot">
-            <img src="img/chbg.svg" alt="">
+                <button type="submit" class="btn program-item__btn show-form__btn choice-form__btn">
+                  заказать
+                </button>
+                <input type="hide" class="js-choice-answer-g">
+                <input type="hide" class="js-choice-answer-a">
+                <input type="hide" class="js-choice-answer-c">
+                <input type="hide" class="js-choice-answer-p">
+              </form>
+            </div>
           </div>
-          <div class="choice-img__left">
-            <img src="img/chl1.png" alt="">
-            <img src="img/chl2.png" alt="">
-          </div>
-          <div class="choice-img__right">
-            <img src="img/chr1.png" alt="">
-            <img src="img/chr2.png" alt="">
-          </div>
-          <div class="choice-img__star-1">
-            <img src="img/s1.svg" alt="">
-          </div>
-          <div class="choice-img__star-2">
-            <img src="img/sy.svg" alt="">
-          </div>
-          <div class="choice-img__star-3">
-            <img src="img/sy.svg" alt="">
-          </div>
-          <div class="choice-img__star-4">
-            <img src="img/sy.svg" alt="">
-          </div>
-          <div class="choice-img__star-5">
-            <img src="img/sy.svg" alt="">
-          </div>
-          <div class="choice-img__star-6">
-            <img src="img/s1.svg" alt="">
-          </div>
-
 
         </div>
-
       </div>
+
+
     </section>
 
     <section class="why">
@@ -1245,13 +1313,7 @@
                     </picture>
                   </a>
                   <button class="video__button" aria-label="Запустить видео">
-                    <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                      <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                      <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                      <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                    </svg>
-
+                    <img src="img/play.svg" alt="">
                   </button>
                 </div>
 
@@ -1483,7 +1545,7 @@
       </div>
     </section>
 
-    <section class="ny">
+    <section id="ny" class="ny">
       <div class="container ny__container">
         <div class="ny__wrapper">
           <h2 class="title title-red ny__title">
@@ -1493,6 +1555,9 @@
             Но чтобы попасть в настоящую новогоднюю сказку, всегда нужно немного больше магии!
 
           </h3>
+          <div class="ny__img">
+            <img src="img/nymi.png" alt="">
+          </div>
           <p class="ny__text">
             Самый долгожданный праздник, который пахнет шоколадными конфетами и мандаринами! Подарки и Дедушка
             Мороз
@@ -1529,10 +1594,19 @@
         </div>
 
         <div class="ny__photo">
-          <img src="img/ny1.png" alt="">
-          <img src="img/ny2.png" alt="">
-          <img src="img/ny3.png" alt="">
-          <img src="img/ny4.png" alt="">
+          <div class="ny__photo-item">
+            <img src="img/ny1.png" alt="">
+          </div>
+          <div class="ny__photo-item">
+            <img src="img/ny2.png" alt="">
+          </div>
+          <div class="ny__photo-item">
+            <img src="img/ny3.png" alt="">
+          </div>
+          <div class="ny__photo-item">
+            <img src="img/ny4.png" alt="">
+          </div>
+
         </div>
         <div class="ny-btn">
           <a href="#" class="btn btn-red ny-btn__item">Скачать каталог новогодних шоу</a>
@@ -1605,7 +1679,7 @@
       </div>
     </section>
 
-    <section class="dec">
+    <section id="dec" class="dec">
 
       <div class="container dec__container">
         <h2 class="title title-pink dec__title">
@@ -1700,7 +1774,7 @@
 
     </section>
 
-    <section class="spec">
+    <section id="spec" class="spec">
       <div class="container spec__container">
         <h2 class="title title-white spec__title">ВЫЕЗДНЫЕ СПЕКТАКЛИ И МЮЗИКЛЫ</h2>
         <h3 class="spec__subtitle">Продолжаем! Время больших форм</h3>
@@ -1786,12 +1860,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -1827,12 +1896,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -1868,12 +1932,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -1909,12 +1968,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -1950,12 +2004,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -1991,12 +2040,7 @@
                         </picture>
                       </a>
                       <button class="video__button" aria-label="Запустить видео">
-                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="100" cy="100" r="83" fill="#3037E4" />
-                          <circle cx="100" cy="100" r="71" stroke="#84CBFF" stroke-width="4" />
-                          <circle cx="100" cy="100" r="99" stroke="white" stroke-width="2" />
-                          <path d="M137 91.5718C142.333 94.651 142.333 102.349 137 105.428L88.25 133.574C82.9167 136.653 76.25 132.804 76.25 126.646L76.25 70.3542C76.25 64.1958 82.9167 60.3468 88.25 63.426L137 91.5718Z" fill="white" />
-                        </svg>
+                        <img src="img/play.svg" alt="">
 
                       </button>
                     </div>
@@ -2011,9 +2055,33 @@
 
         </div>
       </div>
+      <div class="spec-img">
+        <div class="spec-img__star-1">
+          <img src="img/sy.svg" alt="">
+        </div>
+        <div class="spec-img__star-2">
+          <img src="img/sy.svg" alt="">
+        </div>
+        <div class="spec-img__star-3">
+          <img src="img/sy.svg" alt="">
+        </div>
+        <div class="spec-img__star-4">
+          <img src="img/sy.svg" alt="">
+        </div>
+
+        <div class="spec-img__star-5">
+          <img src="img/s1.svg" alt="">
+        </div>
+        <div class="spec-img__star-6">
+          <img src="img/s1.svg" alt="">
+        </div>
+        <div class="spec-img__star-7">
+          <img src="img/s1.svg" alt="">
+        </div>
+      </div>
     </section>
 
-    <section class="show">
+    <section id="quest" class="show">
       <div class="container show__container">
         <h2 class="title title-purple show__title">
           НАШИ КВЕСТЫ
@@ -2317,7 +2385,7 @@
 
     </section>
 
-    <section class="master">
+    <section id="master" class="master">
       <div class="container master__container">
         <h2 class="title title-yellow master__title">
           Мастер-классы
@@ -2346,7 +2414,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2360,7 +2428,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2374,7 +2442,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2388,7 +2456,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2402,7 +2470,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2416,7 +2484,7 @@
                   <p class="master-item__name">
                     Росписи футболок и кружек
                   </p>
-                  <div class="program-item__img">
+                  <div class="master-item__img">
                     <img src="img/mt1.png" alt="">
                   </div>
 
@@ -2459,7 +2527,7 @@
       </div>
     </section>
 
-    <section class="more">
+    <section id="more" class="more">
       <div class="container more__container">
         <h2 class="title title-purple more__title">еще больше радости?</h2>
         <p class="more__text">И это еще не все! СУПЕРО-команда знает, как сделать ваш праздник еще ярче!</p>
@@ -2808,7 +2876,7 @@
             У нас всегда есть, чем удивить как детей, так и взрослых. Воспоминания – это самое ценное в нашей
             жизни, не правда ли? Мы рады дарить счастье
           </div>
-          <a href="#" class="appeal__video js-appeal-video">
+          <a href="#" class="appeal__video js-video-2">
             <span>Посмотреть видео обращение</span>
             <img src="img/apv.svg" alt="">
           </a>
@@ -3051,7 +3119,11 @@
           </div>
         </div>
         <div class="send__right">
+
           <img src="img/send.png" alt="">
+          <div class="send__right-m">
+            <img src="img/sendm.png" alt="">
+          </div>
         </div>
       </div>
       <div class="send-img">
@@ -3075,7 +3147,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer id="#footer" class="footer">
     <div class="container footer__container">
       <div class="col">
         <a href="index.html" class="footer-logo">
@@ -3115,15 +3187,15 @@
       </div>
       <div class="col">
         <div class="footer-list">
-          <li class="footer-list__item">Аниматоры</li>
-          <li class="footer-list__item">Шоу</li>
-          <li class="footer-list__item">Квесты</li>
-          <li class="footer-list__item">Спектакли</li>
-          <li class="footer-list__item">Мастер-классы</li>
-          <li class="footer-list__item">Новый год</li>
-          <li class="footer-list__item">Декорации</li>
-          <li class="footer-list__item">Доп. услуги</li>
-          <li class="footer-list__item">Контакты</li>
+          <li class="footer-list__item"><a href="#anim">Аниматоры</a></li>
+          <li class="footer-list__item"><a href="#show">Шоу</a></li>
+          <li class="footer-list__item"><a href="#quest">Квесты</a></li>
+          <li class="footer-list__item"><a href="#spec">Спектакли</a></li>
+          <li class="footer-list__item"><a href="#master">Мастер классы</a></li>
+          <li class="footer-list__item"><a href="#ny">Новый год</a></li>
+          <li class="footer-list__item"><a href="#dec">Декорации</a></li>
+          <li class="footer-list__item"><a href="#more">Доп. услуги</a></li>
+          <li class="footer-list__item"><a href="#footer">Контакты</a></li>
         </div>
       </div>
       <div class="col">
@@ -3179,6 +3251,52 @@
         </div>
         <a href="#" class="modal__exit">
           <img src="img/mex.svg" alt="" class="modal-call__exit">
+        </a>
+      </div>
+    </section>
+
+    <section class="modal modal-center modal-video-1">
+      <div class="modal__wrapper modal-call__wrapper">
+
+        <div class="board-video__content">
+          <div class="video">
+            <a class="video__link" href="https://youtu.be/4du-kSr1oVE">
+              <picture>
+                <source srcset="https://i.ytimg.com/vi_webp/4du-kSr1oVE/hqdefault.webp" type="image/webp">
+                <img class="video__media" src="https://i.ytimg.com/vi/4du-kSr1oVE/hqdefault.jpg" alt="Исупб">
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <img src="img/play.svg" alt="">
+            </button>
+          </div>
+
+        </div>
+        <a href="#" class="modal__exit">
+          <img src="img/mex.svg" alt="" class="modal-video-1__exit">
+        </a>
+      </div>
+    </section>
+
+    <section class="modal modal-center modal-video-2">
+      <div class="modal__wrapper modal-call__wrapper">
+
+        <div class="board-video__content">
+          <div class="video">
+            <a class="video__link" href="https://youtu.be/4du-kSr1oVE">
+              <picture>
+                <source srcset="https://i.ytimg.com/vi_webp/4du-kSr1oVE/hqdefault.webp" type="image/webp">
+                <img class="video__media" src="https://i.ytimg.com/vi/4du-kSr1oVE/hqdefault.jpg" alt="Исупб">
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <img src="img/play.svg" alt="">
+            </button>
+          </div>
+
+        </div>
+        <a href="#" class="modal__exit">
+          <img src="img/mex.svg" alt="" class="modal-video-2__exit">
         </a>
       </div>
     </section>
